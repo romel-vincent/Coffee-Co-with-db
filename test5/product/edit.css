@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+    background: linear-gradient(to right, #e6dfd3, #f6f2ec);
+    color: #4b3f2f;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background: #8b6b4a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: contain;
+    background: #fffaf5;
+    padding: 4px;
+}
+
+.brand h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fffaf5;
+}
+
+/* Navbar Links */
+.nav-links a {
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    background-color: #d67163;
+    color: #fffaf5;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #b85547;
+    transform: scale(1.05);
+}
+
+/* Form Wrapper */
+.form-wrapper {
+    max-width: 500px;
+    background: #fffdf9;
+    margin: 60px auto;
+    padding: 35px 45px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(75, 63, 47, 0.2);
+    animation: fadeIn 0.6s ease;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #4b3f2f;
+}
+
+/* Form Inputs */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+label {
+    font-weight: 500;
+    color: #4b3f2f;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #cbbba0;
+    border-radius: 8px;
+    background: #f4ece6;
+    font-size: 15px;
+    color: #4b3f2f;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #8b6b4a;
+}
+
+/* Buttons */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    gap: 10px;
+}
+
+.update-btn,
+.cancel-btn {
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Update Button */
+.update-btn {
+    background: #8b6b4a;
+    color: #fffaf5;
+    border: none;
+    cursor: pointer;
+}
+
+.update-btn:hover {
+    background: #6a5139;
+    transform: scale(1.05);
+}
+
+/* Cancel Button */
+.cancel-btn {
+    background: #d67163;
+    color: #fffaf5;
+}
+
+.cancel-btn:hover {
+    background: #b85547;
+    transform: scale(1.05);
+}
+
+/* Error Message */
+.error {
+    background: #f8d7da;
+    color: #842029;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-wrapper {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .update-btn,
+    .cancel-btn {
+        width: 100%;
+    }
+}

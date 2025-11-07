@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background — soft beige like the logo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f1ece5; /* warm neutral beige */
+    color: #4b3f2f; /* coffee brown */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    margin: 0 15px;
+}
+
+/* Registration form container */
+.registration-form {
+    width: 100%;
+    max-width: 440px;
+    padding: 40px 35px;
+    background: #fffdf9; /* near-white cream */
+    border-radius: 14px;
+    box-shadow: 0 6px 25px rgba(75, 63, 47, 0.15); /* soft brown shadow */
+    animation: slideUp 0.8s ease;
+    border: 1px solid #e0d8cf; /* subtle edge like parchment */
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Logo section */
+.logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 130px;
+    height: auto;
+    filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Title */
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #3c2f23; /* deep roast brown */
+    letter-spacing: 1px;
+}
+
+/* Input and select fields */
+input, select {
+    width: 100%;
+    padding: 12px;
+    background: #f6f2ec; /* soft background tone */
+    border-radius: 6px;
+    border: 1px solid #c9bba9; /* muted warm border */
+    outline: none;
+    font-size: 15px;
+    color: #3c2f23;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #a3835e; /* golden-brown accent */
+    box-shadow: 0 0 0 2px rgba(163, 131, 94, 0.2);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #a3835e; /* medium roast brown */
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fffaf3;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #8b6b4a; /* darker roast */
+    transform: scale(1.03);
+}
+
+/* Paragraph and links */
+p {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 10px;
+    color: #3c2f23;
+}
+
+p a {
+    color: #a3835e;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #8b6b4a;
+    text-decoration: underline;
+}
+
+/* Error & success messages */
+.error {
+    padding: 12px;
+    background: #fbeaea;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #a42834;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #e6b7b7;
+}
+
+.success {
+    padding: 12px;
+    background: #f0f8f2;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #155724;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #b7e0b7;
+}

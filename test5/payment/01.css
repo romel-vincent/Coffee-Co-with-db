@@ -1,0 +1,151 @@
+/* === General Layout === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8f0;
+  color: #3e2723;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* === Titles === */
+h1 {
+  color: #4e342e;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  color: #6d4c41;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #d7ccc8;
+  padding-bottom: 0.4rem;
+  text-align: center;
+}
+
+/* === Order Summary === */
+ul {
+  list-style-type: none;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+ul li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+p {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+p strong {
+  color: #d2691e;
+}
+
+/* === Payment Form === */
+form {
+  margin-top: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #5d4037;
+}
+
+select,
+input[type="number"] {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+select:focus,
+input:focus {
+  border-color: #ff7043;
+  box-shadow: 0 0 5px rgba(255, 112, 67, 0.4);
+  outline: none;
+}
+
+/* === Buttons === */
+button {
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #f4511e;
+  transform: translateY(-2px);
+}
+
+/* === Back Button === */
+.back-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: #6d4c41;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #5d4037;
+  transform: translateY(-2px);
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  form, ul {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}

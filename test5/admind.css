@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+    background-image: url(bg.png);
+    min-height: 100vh;
+    background: linear-gradient(to right, #e6dfd3, #f6f2ec);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4b3a25;
+    
+}
+
+.background-overlay {
+  position: fixed;
+  inset: 0;
+  background-image: url(bg.png);
+  background-color: #a3a3a3;
+  z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: #8b6b4a; /* coffee brown */
+    color: #fffaf5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Brand section (logo + title) */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar h1 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* Logout button */
+.logout-btn {
+    text-decoration: none;
+    background: #d67163;
+    color: #fffaf5;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #b85547;
+    transform: scale(1.05);
+}
+
+/* Dashboard content */
+.content {
+    text-align: center;
+    margin-top: 80px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.content h2 {
+    font-size: 26px;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+/* Dashboard clickable links */
+.dashboard-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Matching clickable boxes */
+.clickable-box {
+    background: #fffdf9;
+    color: #4b3f2f;
+    border: 1px solid #d8cfc2;
+    border-radius: 12px;
+    padding: 18px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    width: 80%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(75, 63, 47, 0.1);
+    transition: all 0.3s ease;
+}
+
+.clickable-box:hover {
+    background: #f6f2ec;
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(75, 63, 47, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .brand {
+        flex-direction: column;
+    }
+
+    .logout-btn {
+        width: 100%;
+        max-width: 150px;
+    }
+}

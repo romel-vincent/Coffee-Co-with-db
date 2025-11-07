@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #d7ccc8, #f5f0eb); /* warm coffee-cream gradient */
+    color: #4b3f2f; /* deep coffee brown */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    margin: 0 auto 25px auto;
+    width: 130px;
+    height: auto;
+    border-radius: 0; /* no rounding for elegant look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2)); /* subtle depth */
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Center container */
+.login-form {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 35px;
+    background: #fffaf5; /* soft cream background */
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    animation: slideUp 0.8s ease;
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Heading */
+h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4b3f2f;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    background: #f4ece6;
+    border-radius: 6px;
+    border: 1px solid #c5b7a6;
+    outline: none;
+    font-size: 15px;
+    color: #4b3f2f;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-color: #8b6b4a;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #8b6b4a; /* rich coffee brown */
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #6a5139;
+    transform: scale(1.03);
+}
+
+/* Paragraph and link */
+p {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 10px;
+    color: #4b3f2f;
+}
+
+p a {
+    color: #8b6b4a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Error message */
+.error {
+    padding: 12px;
+    background: #f8d7da;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #a42834;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Success message */
+.success {
+    padding: 12px;
+    background: #d4edda;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #155724;
+    text-align: center;
+    margin-bottom: 20px;
+}

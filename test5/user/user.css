@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, #e6dfd3, #f6f2ec);
+    color: #4b3f2f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: #8b6b4a;
+    color: #fffaf5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Brand Section (Logo + Title) */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar h1 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* Navbar Links */
+.nav-links a {
+    color: #fffaf5;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    background: #d67163;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: #b85547;
+    transform: scale(1.05);
+}
+
+/* Table Container */
+.user-table {
+    background: #fffdf9;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(75, 63, 47, 0.15);
+    overflow-x: auto;
+    padding: 20px;
+}
+
+/* Table Layout */
+.user-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th, 
+.user-table td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid #e2d7c5;
+}
+
+.user-table th {
+    background-color: #8b6b4a;
+    color: #fffaf5;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f9f5ef;
+}
+
+/* Buttons */
+.edit-btn, .delete-btn {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Edit button */
+.edit-btn {
+    background-color: #7b9e6d;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #67855a;
+    transform: scale(1.05);
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #d67163;
+    color: white;
+    margin-left: 8px;
+}
+
+.delete-btn:hover {
+    background-color: #b85547;
+    transform: scale(1.05);
+}
+
+/* Create New User Button */
+.create-user-btn {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.create-user-btn a {
+    background-color: #8b6b4a;
+    color: #fffaf5;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.create-user-btn a:hover {
+    background-color: #6a5139;
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .brand {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .user-table {
+        padding: 10px;
+    }
+
+    .user-table table {
+        font-size: 14px;
+    }
+
+    .create-user-btn a {
+        width: 100%;
+        max-width: 200px;
+    }
+}

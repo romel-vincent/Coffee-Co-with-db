@@ -1,0 +1,173 @@
+/* CoffeeDB Product Management Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    background: linear-gradient(to right, #e6dfd3, #f6f2ec);
+    font-family: "Poppins", sans-serif;
+    color: #4b3f2f;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8b6b4a;
+    color: #fffaf5;
+    padding: 12px 30px;
+    box-shadow: 0 2px 8px rgba(75, 63, 47, 0.2);
+}
+
+.navbar .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar .logo {
+    height: 45px;
+    width: 45px;
+    object-fit: contain;
+}
+
+.navbar h1 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.navbar a {
+    color: #fffaf5;
+    text-decoration: none;
+    margin-left: 18px;
+    padding: 8px 14px;
+    background-color: #d67163;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #b85547;
+    transform: scale(1.05);
+}
+
+/* Content Container */
+.content {
+    padding: 30px;
+}
+
+/* Table Section */
+.user-table {
+    background: #fffdf9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(75, 63, 47, 0.15);
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 1000px;
+    overflow-x: auto;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Table */
+.user-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd0c5;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #8b6b4a;
+    color: #fffaf5;
+    font-weight: 500;
+}
+
+.user-table tr:hover {
+    background-color: #f6f2ec;
+}
+
+/* Buttons inside table */
+.edit-btn, .delete-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #8b6b4a;
+}
+
+.edit-btn:hover {
+    background-color: #6a5139;
+    transform: scale(1.05);
+}
+
+.delete-btn {
+    background-color: #d67163;
+}
+
+.delete-btn:hover {
+    background-color: #b85547;
+    transform: scale(1.05);
+}
+
+/* Create Product Button */
+#createProductBtn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#createProductBtn .btn {
+    background-color: #8b6b4a;
+    color: #fffaf5;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#createProductBtn .btn:hover {
+    background-color: #6a5139;
+    transform: scale(1.05);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .user-table {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .user-table table {
+        font-size: 14px;
+    }
+
+    #createProductBtn .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
